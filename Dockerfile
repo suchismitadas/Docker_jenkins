@@ -17,5 +17,6 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /main/
 COPY ./app.py /main/app.py
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
-EXPOSE 8501
+EXPOSE 8301
 CMD streamlit run app.py
+#ENTRYPOINT ["python", "app.py"]
