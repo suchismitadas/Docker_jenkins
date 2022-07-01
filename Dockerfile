@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8.5
 
 #ARG PYTHON_MAIN_FILE
 # set work directory
@@ -17,5 +17,5 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /main/
 COPY ./app.py /main/app.py
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
-EXPOSE 8501
+EXPOSE 8301
 CMD streamlit run app.py
