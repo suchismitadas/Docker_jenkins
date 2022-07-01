@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.8.5
 
 #ARG PYTHON_MAIN_FILE
 # set work directory
